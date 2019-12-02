@@ -1,0 +1,222 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding:0;
+    color: white;
+}
+
+.header{
+    display: flexbox;
+    flex-direction: row;
+    width: 100%;
+    height: 75px;  
+    margin:0px;
+    padding: 0px;
+}
+
+.headeruno{
+    width: 100%;
+    height: 20px;
+    background: #272121;
+    margin:0px;
+    padding: 0px;
+    color:white;
+    
+}
+.headeruno ol{
+    display:flex;
+    list-style:none;
+    padding: 0px;
+    margin:0px;
+    justify-content: space-between;
+
+}
+
+.headeruno li{
+    text-align: end;
+    padding: 0px 30px;
+}
+ 
+
+.head{
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+figure{
+    padding:0px;
+    margin:0px;
+}
+
+.headerdos{
+    display: flex;
+    padding:0px;
+    margin:0px;
+    width: 100%;
+    height: calc(75px-20px);
+    background: #ff4d00;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerdos ul{
+    list-style: none;
+    display:flex;
+   
+}
+
+.headerdos li{
+    padding:0px 30px;
+}
+
+.inicial{
+    display:grid;
+    width: 100vw;
+    height: calc(79vh);
+    padding:0px;
+    margin:0px;
+   
+     grid-template-areas:"uno     uno    uno    dos    tres"
+                         "uno     uno    uno    dos    tres"
+                         "uno     uno    uno    cuatro  cinco"
+                         "uno     uno    uno    cuatro  cinco"
+                         "uno     uno    uno    ocho   nueve"
+                         "seis   siete   siete   ocho    nueve" 
+                          ;
+
+    
+    
+    grid-template-columns: 410px 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6,1fr);
+}
+
+.titulo{
+    letter-spacing: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+    color: whitesmoke;
+    padding-right: 10px;
+    text-align: right;
+    margin:10px
+
+}
+
+.title{
+    background: #f7b71d;
+    letter-spacing: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
+    margin:10px
+
+}
+
+.uno{
+    grid-area: uno;
+    background-image: url('./imagenes/riomagdalena.jpeg');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.dos{
+    grid-area: dos;
+   
+    min-height: 1fr;
+    background-image: url('./imagenes/filtro.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.tres{
+    grid-area: tres;
+    
+    min-height: 1fr;
+    background-image: url('./imagenes/rio.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.cuatro{
+    grid-area: cuatro;
+    
+    min-height: 1fr;
+    background-image: url('./imagenes/piedras.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.cinco{
+    grid-area: cinco;
+    
+    min-height: 1fr;
+    background-image: url('./imagenes/WhatsApp\ Image\ 2019-10-03\ at\ 13.57.09.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.seis{
+    grid-area: seis;
+    background: #272121;
+    
+}
+.siete{
+    grid-area: siete;
+    background: #3b064d;
+    
+}
+.ocho{
+    grid-area: ocho;
+
+    min-height: 1fr;
+    background-image: url('./imagenes/WhatsApp\ Image\ 2019-09-28\ at\ 13.24.40.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+.nueve{
+    grid-area: nueve;
+    
+    min-height: 1fr;
+    background-image: url('./imagenes/terreno.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.footer{
+    width: 100%;
+    height: 50px;
+    background: #ff4d00;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    
+    
+}
+.footer_creditos{
+    padding-right: 10px;
+}
+
+
+.footer_lista{
+    display:flex;
+    
+}
+
+.footer_lio{
+    list-style:none;
+    display:inherit;
+    margin:10px;
+   
+}
+
+.footer_lio li{
+    padding: 0px 20px;
+}
+
+
+  
+
